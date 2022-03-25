@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+.title__launchx{
+margin: 0 auto;
+text-align: center;
+}
+
+
+body{
+    /* Created with https://www.css-gradient.com */
+background: #FEFF01;
+background: -webkit-radial-gradient(center, #FEFF01, #FFBB01);
+background: -moz-radial-gradient(center, #FEFF01, #FFBB01);
+background: radial-gradient(ellipse at center, #FEFF01, #FFBB01);
+}
+
+.screen__elements{
+    margin: 0 auto;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+    
+.img__container{
+    width: 100%;
+    height: 100vh;
+    height: auto;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flex__container{
+    position: relative;
+    margin: 0 auto;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 350px;
+    flex-direction: column;
+    bottom:795px;
+    left: -60px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.elements__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.pokedex__img{
+    width: 1000px;
+    height: auto;
+    
+}
+    
+
+
+.pokeball__img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 5px auto;
+    margin-top: 8px;
+    background-color: rgba(255, 255, 255, 0.219);
+    box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.144);
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.ingresa__nombre{
+    width: 250px;
+    height: 40px;
+    border-style: ridge;
+    border-width: 8px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.5EM;
+    color: #ffff00;
+    font-weight: bolder;
+    
+    background: #ffff00;
+    background: -webkit-linear-gradient(top, #FEFF01, #EB2C25);
+    background: -moz-linear-gradient(top, #FEFF01, #EB2C25);
+    background: linear-gradient(to bottom, #FEFF01, #EB2C25);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+
+}
+
+.no__encontrado{
+    color:red;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.2EM;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+}
+
+.ingresa__nombre::placeholder{
+    color:#ffffad91;
+    font-size: .9em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+}
+
+.button__cta{
+    margin-top: 0px;
+    width: 250px;
+    height: 40px;
+    border-style:ridge;
+    border-width: 8px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1.2EM;
+    font-weight: bolder;
+    color:yellow ;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+    
+    
+
+    /* Created with https://www.css-gradient.com */
+    /* Created with https://www.css-gradient.com */
+    background: #FEFF01;
+    background: -webkit-linear-gradient(top, #FEFF01, #EB2C25);
+    background: -moz-linear-gradient(top, #FEFF01, #EB2C25);
+    background: linear-gradient(to bottom, #FEFF01, #EB2C25);
+}
+.button__cta:hover{
+    background: #ffff01;
+    background: -webkit-linear-gradient(top, #FEFF01, #EB2C25);
+    background: -moz-linear-gradient(top, #FEFF01, #EB2C25);
+    background: linear-gradient(to bottom, #FEFF01, #eb2c251e);
+    color: red;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+}
+.information{
+    position: relative;
+    margin: 0 auto;
+    height: 300px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+    top: -700px;
+    left: -55px;
+    
+}
+    
+    
+    
+.poder{
+    display: flex;
+
+}
+.information__title{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: red;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+    padding-bottom: 20px;
+    
+}
+
+.information__hp {
+    text-align: center;
+    display:flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    margin-left: 5px;
+    color: rgb(255, 5, 5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+}
+
+.information__paragraph{
+    text-align: left;
+    display:flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 5px;
+    color: rgb(255, 5, 5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+    
+
+  
+
+
+.information__type{
+    background-color: #EB2C25;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+    
+}
+.information__move{
+    background-color: #EB2C25;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+    text-transform: capitalize;
+}
+.yellow__button{
+    position: absolute;
+    top:60px;
+    right: -310px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color:yellow;
+    box-shadow: 2px 2px 10px 10px rgb(253, 253, 144);
+}
+.red__button{
+    position: absolute;
+    top:60px;
+    right: -310px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color:red;
+    box-shadow: 2px 2px 10px 10px rgb(253, 81, 81);
+}
+
+.green__button{
+    position: absolute;
+    top:60px;
+    right: -310px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color:green;
+    box-shadow: 2px 2px 10px 10px rgb(0, 170, 28);
+}
+.logo{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    
+    
+}
+.poke__logo{
+    width: 300px;
+    margin-top:10px ;
+    
+    
+}
+.title__launchx{
+    
+    font-size: 1.5em;
+    margin-bottom: 0;
+    color: #355fac;
+    font-size: 3em;
+    font-family:'Courier New', Courier, monospace;
+    font-style: italic;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.212);
+    
+}

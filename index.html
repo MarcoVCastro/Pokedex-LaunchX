@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch X</title>
+    
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <header clas ="pokedex__body">
+        <div class="logo">
+            <img src="/img/Logo.png" alt="pokemon logo" class="poke__logo">
+        </div>
+        <h1 class="title__launchx">LaunchX</h1> 
+        
+        <div class="screen__elements">
+                
+            <div class="img__container">
+                <img src="./img/pokedex-silueta OK.png" alt="pokedex" class="pokedex__img">
+            </div>
+
+
+            <div class="flex__container">
+                <div class="elements__container">
+                    <input type="text" placeholder="Ingresa el nombre" id="pokeName" name="pokeName" class="ingresa__nombre" >
+                    <img src="/img/pokeball.png" alt="pokeball" class="pokeball__img" id="pokeImg">
+                    <p class="no__encontrado" id="notFound"></p>
+                    <button class="button__cta" onclick="fetchpokemon()">Busca Pokemon</button>
+                </div>
+            </div>
+
+            <div class="information" >
+                <div class="poder">
+                    <h2 class="information__title">Poder:</h2>
+                    <p class="information__hp" id="pokeHP"></p>
+                </div>
+
+                <div class="poder">
+                    <h2 class="information__title">Tipo:</h2>
+                    <p class="information__paragraph" id="pokeType"></p>
+                </div>
+
+                <div class="poder">
+                    <h2 class="information__title">Movimientos:</h2>
+                    <p class="information__paragraph" id="pokeMove"></p>
+                </div>
+
+                <div class="poder">
+                    <h2 class="information__title">Habilidades:</h2>
+                    <p class="information__paragraph" id="pokeAbilities"></p>
+                </div>
+                    
+               <div class="yellow__button" id="button"></div>
+                    
+            </div>
+
+        </div>
+    </header>
+    </body>
+    <footer>
+        <script src="./js/pokedex.js"></script>
+</footer>
+</html>
