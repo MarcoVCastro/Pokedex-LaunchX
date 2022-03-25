@@ -5,11 +5,9 @@ const fetchpokemon =()=>
     const url = `https://pokeapi.co/api/v2/pokemon/${pokeInput}`;
     fetch(url).then((res)=>
     {
-        // console.log(res)
         if(res.status !="200"){
             console.log(res);
-            pokeImage("../img/pikachu-cry.gif")
-        // let noEncontrado =document.getElementById("notFound")
+            pokeImage("./img/pikachu-cry.gif")
             notFound.textContent = "Pokemon no encontrado!!!"
             button.classList.replace("yellow__button","red__button")
             button.classList.replace("green__button","red__button")
@@ -36,8 +34,6 @@ const fetchpokemon =()=>
         pokeImage(pokeImg)
        
         let pokeHP = data.stats[0].base_stat ;
-        // let pokeHP = data.stats[0].stat.name + " = " + data.stats[0].base_stat ;
-        //console.log(pokeStatus)
         pokeStats(pokeHP)
 
         let pokeType = data.types[0].type.name;
@@ -49,9 +45,6 @@ const fetchpokemon =()=>
         let pokeAbilities = data.abilities[0].ability.name + ", " + data.abilities[1].ability.name;
         pokeHabilidades(pokeAbilities)
 
-        
-
-   
     })
 }
 
@@ -80,23 +73,3 @@ const pokeHabilidades =(url)=>{
     pokeAbilities.textContent = url;
 
 }
-
-// const noEncontrado =( )=>{
-//     const notFound = document.getElementById("notfound")
-//     notFound.textContent = "Pokemon no enontrado!!!"
-// }
-
-    
-
-
-    
-
-
-// pokeImg("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png")
-
-// const imprimir =()=>{
-//     const pokeName = document.getElementById("pokeName");
-//     let pokeInput = pokeName.value;
-
-//     console.log("Hola " + pokeInput);
-// }
